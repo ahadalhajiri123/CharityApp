@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/imgDrawerIcon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="todo"
+        android:src="@drawable/logo"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCharity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Charity App"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imgDrawerIcon" />
+
+    <View
+        android:id="@+id/viewTop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="18dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtCharity" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintMyDonation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtCharity">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgLanguage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="12dp"
+            android:tint="@color/black"
+            android:padding="4sp"
+            app:layout_constraintBottom_toBottomOf="@id/constraintMyDonation"
+            app:layout_constraintStart_toStartOf="@id/constraintMyDonation"
+            app:layout_constraintTop_toTopOf="@id/constraintMyDonation" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:text="My Donation"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@id/imgLanguage"
+            app:layout_constraintEnd_toEndOf="@id/constraintMyDonation"
+            app:layout_constraintStart_toEndOf="@id/imgLanguage"
+            app:layout_constraintTop_toTopOf="@id/imgLanguage" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintMyProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintMyDonation">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgProVersion"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="12dp"
+            android:tint="@color/black"
+            android:padding="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/constraintMyProfile"
+            app:layout_constraintStart_toStartOf="@id/constraintMyProfile"
+            app:layout_constraintTop_toTopOf="@id/constraintMyProfile" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:text="My Profile"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@id/imgProVersion"
+            app:layout_constraintEnd_toEndOf="@id/constraintMyProfile"
+            app:layout_constraintStart_toEndOf="@id/imgProVersion"
+            app:layout_constraintTop_toTopOf="@id/imgProVersion" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintPrivacyPolicy1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintMyProfile">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgMoreApps"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="12dp"
+            android:tint="@color/black"
+            android:padding="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/constraintPrivacyPolicy1"
+            app:layout_constraintStart_toStartOf="@id/constraintPrivacyPolicy1"
+            app:layout_constraintTop_toTopOf="@id/constraintPrivacyPolicy1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:text="Privacy Policy"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@id/imgMoreApps"
+            app:layout_constraintEnd_toEndOf="@id/constraintPrivacyPolicy1"
+            app:layout_constraintStart_toEndOf="@id/imgMoreApps"
+            app:layout_constraintTop_toTopOf="@id/imgMoreApps" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintContactSupport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintPrivacyPolicy1">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgFeedback"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="12dp"
+            android:tint="@color/black"
+            android:padding="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/constraintContactSupport"
+            app:layout_constraintStart_toStartOf="@id/constraintContactSupport"
+            app:layout_constraintTop_toTopOf="@id/constraintContactSupport" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:text="Contact Support"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@id/imgFeedback"
+            app:layout_constraintEnd_toEndOf="@id/constraintContactSupport"
+            app:layout_constraintStart_toEndOf="@id/imgFeedback"
+            app:layout_constraintTop_toTopOf="@id/imgFeedback" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintContactSupport">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgShare"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="12dp"
+            android:tint="@color/black"
+            android:padding="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/constraintAbout"
+            app:layout_constraintStart_toStartOf="@id/constraintAbout"
+            app:layout_constraintTop_toTopOf="@id/constraintAbout" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:text="About"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@id/imgShare"
+            app:layout_constraintEnd_toEndOf="@id/constraintAbout"
+            app:layout_constraintStart_toEndOf="@id/imgShare"
+            app:layout_constraintTop_toTopOf="@id/imgShare" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrainLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintAbout">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgPrivacyPolicy"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="12dp"
+            android:tint="@color/black"
+            android:padding="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/constrainLogout"
+            app:layout_constraintStart_toStartOf="@id/constrainLogout"
+            app:layout_constraintTop_toTopOf="@id/constrainLogout" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/logoutBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:text="Logout"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@id/imgPrivacyPolicy"
+            app:layout_constraintEnd_toEndOf="@id/constrainLogout"
+            app:layout_constraintStart_toEndOf="@id/imgPrivacyPolicy"
+            app:layout_constraintTop_toTopOf="@id/imgPrivacyPolicy" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

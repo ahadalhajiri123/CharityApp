@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "977196318133",
+    "project_id": "charityapp-1403e",
+    "storage_bucket": "charityapp-1403e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977196318133:android:7fcc1cec4e5d805b8dadfc",
+        "android_client_info": {
+          "package_name": "com.mec.miniprojects"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977196318133-pdmmsh74v6ebepso2g5qsmel8v24ed18.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mec.miniprojects",
+            "certificate_hash": "a36b7886867b1203aa45232c44d412a72025182b"
+          }
+        },
+        {
+          "client_id": "977196318133-mrr2bg907sv0ajdpt561g4eoqj3a4f37.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCGpOXhM7q7JjdHLbUxuOzoavcwCFt7WU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977196318133-mrr2bg907sv0ajdpt561g4eoqj3a4f37.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

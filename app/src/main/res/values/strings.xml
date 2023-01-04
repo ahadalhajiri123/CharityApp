@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CharityApp</string>
+
+    <!--Firebase AUTH -->
+    <string name="phone_number">Phone Number</string>
+    <string name="generate_otp">Generate OTP</string>
+    <string name="otp_receive_alert">Not received OTP resend and try</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="verify_sign_in">Verify and Sign In</string>
+    <string name="sign_out">sign out</string>
+    <string name="resend_alert">You can resend OTP after a minute.</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="todo">TODO</string>
+    <string name="charity">Charity</string>
+</resources>

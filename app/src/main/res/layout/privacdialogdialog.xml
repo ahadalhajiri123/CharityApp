@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/About"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="marquee"
+        android:justificationMode="inter_word"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:padding="16sp"
+        android:text="Privacy"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:ellipsize="marquee"
+        android:justificationMode="inter_word"
+        android:text="A privacy policy is a legal document that outlines the types of personal information a charity app collects, how that information is used, and how it is protected. The policy should also explain how individuals can access and update their personal information, and how they can opt out of having their information collected or used.
+
+Here are some key points that a charity app's privacy policy might include:
+
+The types of personal information the app collects (e.g. name, email address, phone number)
+The purposes for which the app uses the personal information (e.g. to process donations, to send updates or newsletters)
+Whether the app shares personal information with third parties, and if so, which ones
+The measures the app takes to protect personal information (e.g. encryption, secure servers)
+How individuals can access and update their personal information
+How individuals can opt out of having their personal information collected or used
+How the app will notify users of any changes to the privacy policy
+It is important for a charity app to have a clear and comprehensive privacy policy to build trust with users and ensure that their personal information is handled responsibly."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/About">
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:justificationMode="inter_word"
+            android:padding="20dp"
+            android:text="It is possible that a charity app could include features related to clothing donations. For example, some charity apps may allow users to schedule pickups for donations of gently used clothing, or to find nearby drop-off locations where they can donate clothing items. Other charity apps may provide information about organizations that accept clothing donations, or about programs that repurpose or distribute donated clothing to those in need. Some charity apps may also include features that allow users to purchase clothing items from charitable organizations, with the proceeds going to support charitable causes. Overall, the specific features and functionality of a charity app with regard to clothing donations will depend on the app and the charitable organization or organizations it is associated with."
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/About" />
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
